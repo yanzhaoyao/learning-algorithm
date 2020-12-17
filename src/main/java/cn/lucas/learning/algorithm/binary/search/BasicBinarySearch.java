@@ -9,8 +9,10 @@ package cn.lucas.learning.algorithm.binary.search;
 public class BasicBinarySearch {
 
     public static void main(String[] args) {
-        int[] num = {1, 4, 7, 9, 10, 14, 16, 20, 56, 89};
-        System.out.println(new BasicBinarySearch().getIndex(num, 90));
+        String str = "createContractAndAuthorizes ";
+        if (!(str != null && str.contains("数据已存在"))) {
+            throw new RuntimeException();
+        }
     }
 
     public int getIndex(int[] num, int target) {
